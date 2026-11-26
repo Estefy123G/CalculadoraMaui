@@ -48,31 +48,31 @@ A continuación, se muestra el funcionamiento de la aplicación en sus diferente
 
 Al iniciar, se muestran los campos "Primer número" y "Segundo número", los cuatro botones de operación, el área de resultado y el botón **Limpiar**.
 
-![Pantalla principal](capturas/01-pantalla-principal.png)
+![Pantalla principal](01-pantalla-principal.png)
 
 ### 2. Validación de números
 
 Si se ingresa un valor que no es numérico (por ejemplo, una letra), la aplicación muestra un mensaje de error indicando que se debe ingresar un número válido.
 
-![Validación de número](capturas/02-validacion-numero.png)
+![Validación de número](02-validacion-numero.png)
 
 ### 3. Resta
 
 Con los valores `10` y `3`, al presionar el botón `−` el resultado mostrado es `7`.
 
-![Resta](capturas/03-resta.png)
+![Resta](03-resta.png)
 
 ### 4. División para cero
 
 Al intentar dividir `10` para `0`, la aplicación evita el error y muestra el mensaje "No se puede dividir para cero."
 
-![División para cero](capturas/04-division-cero.png)
+![División para cero](04-division-cero.png)
 
 ### 5. Multiplicación
 
 Con los valores `10` y `8`, al presionar el botón `×` el resultado mostrado es `80`.
 
-![Multiplicación](capturas/05-multiplicacion.png)
+![Multiplicación](05-multiplicacion.png)
 
 ---
 
