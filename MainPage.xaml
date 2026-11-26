@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora.MainPage"
+             Title="Calculadora"
+             BackgroundColor="#F2F2F7">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="25" Spacing="15" MaximumWidthRequest="420">
+
+            <Label Text="Calculadora"
+                   FontSize="32"
+                   FontAttributes="Bold"
+                   TextColor="#512BD4"
+                   HorizontalOptions="Center" />
+
+            <!-- Primer número -->
+            <Label Text="Primer número:" FontSize="16" TextColor="Black" />
+            <Entry x:Name="Numero1Entry"
+                   Placeholder="Ej: 10"
+                   Keyboard="Numeric" />
+
+            <!-- Segundo número -->
+            <Label Text="Segundo número:" FontSize="16" TextColor="Black" />
+            <Entry x:Name="Numero2Entry"
+                   Placeholder="Ej: 5"
+                   Keyboard="Numeric" />
+
+            <!-- Botones de operaciones (2 x 2) -->
+            <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto"
+                  ColumnSpacing="10" RowSpacing="10" Margin="0,10,0,0">
+                <Button Grid.Row="0" Grid.Column="0" Text="+" CommandParameter="+" Clicked="OnOperacionClicked" />
+                <Button Grid.Row="0" Grid.Column="1" Text="−" CommandParameter="-" Clicked="OnOperacionClicked" />
+                <Button Grid.Row="1" Grid.Column="0" Text="×" CommandParameter="*" Clicked="OnOperacionClicked" />
+                <Button Grid.Row="1" Grid.Column="1" Text="÷" CommandParameter="/" Clicked="OnOperacionClicked" />
+            </Grid>
+
+            <!-- Resultado -->
+            <Border BackgroundColor="White" Stroke="#512BD4" StrokeThickness="2"
+                    Padding="15" Margin="0,10,0,0">
+                <Label x:Name="ResultadoLabel"
+                       Text="Resultado: "
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       HorizontalTextAlignment="Center" />
+            </Border>
+
+            <!-- Limpiar -->
+            <Button Text="Limpiar"
+                    BackgroundColor="Gray"
+                    FontSize="18"
+                    Clicked="OnLimpiarClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
